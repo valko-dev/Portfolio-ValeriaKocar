@@ -72,7 +72,7 @@ a {
 
 .presentacion__foto {
     display: flex;
-    width:30%;
+    width:35%;
     padding-right:5% ;
     
 }
@@ -81,28 +81,22 @@ a {
 .redes{
     display: flex;
     flex-direction: row;
-    align-items: baseline;
-    gap: 15px;
+    gap: 20px;
+    padding-left: 50%;
+    padding-top: 10%;
    
 }
 
-.redes__icono  {
+.redes__icono {
+    background-color: turquoise;
+   flex-direction: row;
+   justify-content: space-between;
+   width: 90px;
+   height: 90px;
+   
 
-   display: flex;
-   justify-content: center;
-   align-self: center;
-   align-items: center;
-   width: 50px;
-   height: 50px;
-  
- 
 }
-.redes__nombre{
-    display: flex;
-    justify-content: center;
-    align-self: center;
-    font-size: 1.2rem;
-}
+
 
 /* ------------------------------ Sección sobre mí ----------------------------------*/
 .sobre-mi{
@@ -110,21 +104,24 @@ a {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin:  8%;
+    margin:  1%;
     width: 1150px;
-    height: 600px;
+    height: 530px;
     padding: 3%;
+    margin-bottom: 0px;
     
    
 }
 
 .sobre-mi__texto{
-    display: flex;
     align-items: center;
     text-align: justify;
     width: 1136px;
     height: 255px;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+    margin: 0%;
+    padding: 0%;   
+    margin-bottom: 0px;
     
    
 }
