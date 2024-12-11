@@ -1,5 +1,3 @@
-/* Este repositório base fué creado para ayudarte en caso que no sepas como comenzar, recuerda que el portafolio es tu carta de presentación y debes darle tu cara, por eso te invitamos a personalizarlo según tu estilo y preferencias no te limites apenas al layout propuesto en figma  
-*/
 :root {
     --color-de-fondo: #f4f1deff;
     --color-de-fondo-menu: white;
@@ -9,15 +7,22 @@
 body {
     background-color: var(--color-de-fondo);
     font-family: 'Raleway', sans-serif;
-    margin: 0;
+    margin: 0%;
     box-sizing: border-box;
-    padding: 0;
-    width: 1440px;
+    padding: 0%;
+    max-width: 100%;
     height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 ol, ul, li {
     list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 50%;
+    gap: 0%;
 }
 
 a {
@@ -30,279 +35,370 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 1rem;
+    padding: 1%;
     background-color: var(--color-de-fondo-menu);
+    width: 100%;
+   
 }
 
-.cabecera__logo {
-    max-width: 80px; /* Ajuste para pantallas pequeñas */
-}
 
 .cabecera__titulo {
-    font-size: 1.2rem;
+    font-size: 60%;
     text-align: center;
 }
 
+.navegacion {
+    
+    margin-right: 13%;
+    
+}
 .navegacion__lista {
+    display: flex;
+    white-space: nowrap;
+    flex-direction: row;
+    align-self: flex-start;
+    gap: 5%;
+    font-size: 60%;
+    font-weight: bold;
 
-    display: none;
 }
 
-.navegacion__elemento a {
-    font-size: 1.5rem;
-}
+
 /* ------------------------------ Sección Presentación ------------------------------*/
 .presentacion {
-   
+  
     display: flex;
     flex-direction: flex-start;
     align-items: center;
-    margin:8%;
-    width: 1140px;
-    height: 500px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 0%;
+    padding: 5%;
+    padding-left: 15%;
+    padding-right: 15%;
+    gap: 5%
 
 
 }
 
 
 .presentacion__subtitulo{
-    
-    font-size: 1.2rem;
+    font-size: 100%;
 }
 
 .presentacion__foto {
     display: flex;
-    width:35%;
-    padding-right:5% ;
+    width: 25%;
+    padding-right: 1%;
+    padding-left: 5%;
     
 }
 
 
-.redes{
+.redes {
     display: flex;
-    flex-direction: row;
-    gap: 20px;
-    padding-left: 50%;
-    padding-top: 10%;
-   
-}
-
-.redes__icono {
-    background-color: turquoise;
-   flex-direction: row;
-   justify-content: space-between;
-   width: 90px;
-   height: 90px;
-   
+    
 
 }
+.redes {
+    background-color: transparent;
+    margin-top: 5%;
+    width: 30%;
+    gap: 0;
+    border: none;
+    
+}
 
+.redes__icono  { 
+   display: flex;
+   justify-content: center;
+   align-self: center;
+   align-items: center;
+   width: 3.1rem;
+   height: 3.1rem;
+ 
+}
 
 /* ------------------------------ Sección sobre mí ----------------------------------*/
 .sobre-mi{
     background-color: var(--color-de-fondo-menu);
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    margin:  1%;
-    width: 1150px;
-    height: 530px;
-    padding: 3%;
-    margin-bottom: 0px;
+    justify-content: flex-start;
+    width: 90%;
+    height: auto;
+    margin: 5% 5% 5% 5%;  
+    
     
    
 }
 
-.sobre-mi__texto{
+.sobre-mi__titulo{
+    padding-left: 10%;
+    padding-top: 5%;
+}
+.sobre-mi__texto  {
     align-items: center;
-    text-align: justify;
-    width: 1136px;
-    height: 255px;
-    font-size: 1.2rem;
-    margin: 0%;
-    padding: 0%;   
-    margin-bottom: 0px;
+    text-align:justify;
+    width: 79%;
+    height: 17.7%;
+    font-size: 1.5rem;
+    padding-left: 10%;
+    margin-bottom: 5%;
     
-   
 }
 
+.sobre-mi__texto1{
+    margin-right: 20%;
+    padding-left: 10%;
+    align-items: center;
+}
 /*------------------------------ Sección de Habilidades ------------------------------*/
 .habilidades{
+    width: 100%;
+    height: auto;
     display: flex;
-    padding: 20px;
+    padding: 0%;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
+
     
 }
 
-
+.habilidades__titulo{
+    padding: 5%;
+    margin-right: 13%;
+}
 .habilidades__lista{
+
     display: flex;
-    width: 1136px;
-    height: 234px;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: center;
+    justify-content: center;
     align-items: center;
+    width: 78.9%;
+    height: 16.2%;
+    margin-bottom: 15%;
+   
 }
 
 .habilidades__elemento{
-    border: 1px solid #ccc;
+    
+    border: 0.2rem solid #567756;
     background-color: white;
-    width: 176px;
-    height:174px;
-    line-height: 40px;
+    width: 12rem;
+    height: 8rem;
     text-align: center;
-    margin: 1px;
+    padding-top: 4%;
+    margin: 3%;
 
-    flex-direction: row;
-    flex-wrap: wrap;
 }
 /*------------------------------ Sección de Aficiones --------------------------------*/
 .aficiones{
+    width: 100%;
+    height: auto;
     display: flex;
-    padding: 20px;
+    padding: 0%;
     flex-direction: column;
     align-items: center;
 }
 
+.aficiones__titulo{
+    padding: 5%;
+    margin-right: 13%;
+}
 .aficiones__lista{ 
+   
     display: flex;
-    width: 1136px;
-    height: 234px;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: center;
+    justify-content: center;
     align-items: center;
+    width: 78.9%;
+    height: 16.2%;
+    margin-bottom: 15%;
 }
 
 .aficiones__elemento{
-    border: 1px solid #ccc;
+    border: 0.2rem solid #567756;
     background-color: white;
-    width: 176px;
-    height:174px;
-    line-height: 40px;
+    width: 12rem;
+    height: 8rem;
     text-align: center;
-    margin: 1px;
-    flex-direction: row;
-    flex-wrap: wrap;
+    padding-top: 4%;
+    margin: 3%;
 
 }
 /*---------------------------- Sección de formacion academica ---------------------------------*/
 .formacion{
-    background-color: blue;
     display: flex;
-    padding: 20px;
+    padding: 0%;
     flex-direction: column;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    width: 1440px;
-    height: 581px;
+    width: 100% ;
+    height: 40.3%;
     
     
 }
 
+.formacion__titulo{
+    padding: 5%;
+    margin-right: 13%;
+}
 .formacion__lista{
     display: flex;
-    width: 1136px;
-    height: 234px;
+    width: 78.9%;
+    height: 16.2%;
     flex-direction: center;
     align-items: center;
     margin-bottom: 15%;
 }
 
 .formacion__elemento{
-    border: 1px solid #ccc;
+    border: 0.2rem solid #f1a2a2;
     background-color: white;
-    width: 368px;
-    height:286px;
-    line-height: 40px;
+    width: 16rem; 
+    height: 12rem; 
     text-align: center;
-    margin: 1px;
+    margin: 1%;
     flex-direction: center;
+    justify-content: space-around;
+    padding: 2%;
     
 }
 
 
 /*---------------------------- Sección de Proyectos ---------------------------------*/
 .proyectos{
-    background-color: blueviolet;
+    
     display: flex;
-    padding: 20px;
+    padding: 0%;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    width: 1440px;
-    height: 581px;
+    width: 100%;
+    height: 50%;
+    margin: 0%;
+    padding: 0%;
     
 }
 
+.proyectos__titulo{
+    padding: 5%;
+    margin-right: 13%;
+}
 .proyectos__lista{
+    
     display: flex;
     flex-direction: center;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    width: 1136px;
-    height: 234px;
+    width: 78.9%;
+    height: 16.2%;
     margin-bottom: 15%;
 }
 
 .proyectos__elemento{
-    border: 1px solid #ccc;
+    border: 0.2rem solid #f1a2a2;
     background-color: white;
-    width: 368px;
-    height:286px;
-    line-height: 40px;
+    width: 16rem; 
+    height: 12rem; 
     text-align: center;
-    margin: 1px;
+    margin: 1%;
     flex-direction: center;
-    
 }
-.proyectos__icono{
-    width: 368px;
-    height:286px;
 
+.proyectos__icono{
+    width: 25.56%; 
+    height: 19.86%; 
+}
+
+.proyectos__icono1{
+    width: 25.56%; 
+    height: 19.86%; 
+    object-fit: contain;
 }
 
 /*---------------------------- Sección de Contacto ---------------------------------*/
+.contacto__titulo{
+    padding: 5%;
+    
+}
 
 
-/* ------------------------------ Responsividad ---------------------------------------*/
+.redes__contacto{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50%;
+    
+}
 
-/* Tablets y pantallas más grandes */
+.redes__img__contacto{
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 40%;
+}
+
 @media (min-width: 768px) {
+    /* Aquí puedes ajustar aún más el diseño para pantallas grandes */
     .cabecera {
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+        width: 100%;
+        height: auto;
+    }
+
+    .cabecera__titulo{
+        width: 100%;
+        justify-content: center;
     }
 
     .cabecera__logo {
-        max-width: 100px;
+        max-width: 100%;
     }
 
     .cabecera__titulo {
-        font-size: 1.5rem;
+        font-size: 150%;
     }
 
-    .navegacion__lista {
-        display: flex;
-        flex-direction: row;
-        gap: 1rem;
-        margin-top: 0;
+    .proyectos__titulo, .formacion__titulo, .habilidades__titulo, .aficiones__titulo{
+        margin-left: 13%;
+       
+
     }
 
-    .navegacion__elemento a {
-        font-size: 1rem;
+
+    .aficiones__elemento p{
+        font-size: 80%;
     }
+
+    .aficiones__elemento {
+        width: 100%;
+    }
+
+
+    .contacto__titulo{
+    justify-content: center;
+    margin-left: 13%;
+    }
+    .redes__contacto{
+    justify-content: center;
+    margin-left: 27%;
+
+    }
+
 }
 
-/* Pantallas grandes */
 @media (min-width: 1024px) {
     /* Aquí puedes ajustar aún más el diseño para pantallas grandes */
     .cabecera__titulo {
-        font-size: 1.8rem;
+        font-size: 180%;
     }
 
     .navegacion__elemento a {
-        font-size: 1.1rem;
+        font-size: 110%;
     }
 }
+
